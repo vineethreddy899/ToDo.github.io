@@ -1,0 +1,105 @@
+*{
+    background-color: rgb(219, 219, 235);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:20px auto;
+   
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    border: 2px solid grey;
+}
+.button{
+    width: 15%;
+    cursor: pointer;
+    background-color: blue;
+    color:#fff;
+    margin-top: 7px;
+    padding: 7px;
+}
+.center{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+table{
+   width: 52%;
+   text-align: left;
+   margin:0px auto;
+   font-size: 20px;
+   border: 2px solid black;
+}
+thead{
+   color: blue;
+   margin:0px auto;
+}
+tbody{
+    margin:0px auto;
+}
+.btn{
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+}
+td{
+    color: black;
+    border: 2px solid black;
+    padding: 2px;
+}
+th{
+    border: 2px solid black;
+    padding: 2px;
+}
+.myinput{
+    text-align: left;
+    font-weight: 600;
+}
+.myinput input{
+    width: 48vw;
+    margin: 8px 24vw;
+}
+
+
+@media (max-width:728px) {
+    .button{
+        width: 25%;
+    }
+    
+}
+
+@media (max-width:580px) {
+    .button{
+        width: 30%;
+    }
+    
+}
+@media (max-width:550px) {
+    .myinput input{
+        width: 80vw;
+        margin: 8px 10vw;
+    }
+}
+@media (max-width:628px) {
+    .myinput input{
+        width: 50vw;
+        margin: 8px 23vw;
+    }
+    
+}
+@media (max-width:385px) {
+    .button{
+        width: 40%;
+    }
+    .myinput input{
+        width: 65vw;
+        margin: 8px 12vw;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do lists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2>To Do's</h2>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" placeholder="Title" id="title">
+            <label>Description</label>
+            <textarea rows="3" placeholder="Write description.." id="description"></textarea>
+            <button class="button" id="add">Add to list</button>
+            <button class="button" id="clear" onclick="clearstorage()">Clear list</button>
+        </div>
+    </div>
+
+    <h2 class="center">Your Items</h2>
+    <div class="myinput">
+        <input type="text" id="myinput" placeholder=" Search title..." onkeyup="searchFun()">
+    </div>
+    <div class="table">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Coffee</td>
+                    <td>Take coffee at 5 pm</td>
+                    <td><button class="btn">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
